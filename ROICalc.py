@@ -59,26 +59,26 @@ class ROICalc():
         self.calcROI 
 
 
-    def runner(self):
-        print('Welcome to the Bigger Pockets ROI (Return on Investment) Calculator! \nThis calculator will calculate your OVERALL ROI on your investments, or you can calculate each section separately.')
+#     def runner(self):
+#         print('Welcome to the Bigger Pockets ROI (Return on Investment) Calculator! \nThis calculator will calculate your OVERALL ROI on your investments, or you can calculate each section separately.')
         
-        while True:
-             choice = input("\nWhat would you like to do? \nCalculate ROI on property 'ROI', calculate income 'income', calculate expenses 'expenses', calculate cash flow? 'flow', or 'quit' " ).lower()
-             print('\nPlease enter ALL values without extra characters such as $.  ')
+#         while True:
+#              choice = input("\nWhat would you like to do? \nCalculate ROI on property 'ROI', calculate income 'income', calculate expenses 'expenses', calculate cash flow? 'flow', or 'quit' " ).lower()
+#              print('\nPlease enter ALL values without extra characters such as $ or , .  ')
 
-             if choice == 'quit':
-                  print('\nThanks for visiting our ROI Calculator! If you change your mind, we would love you help you calculate the ROI on your investments in the future.')
-                  break
-             elif choice == 'income':
-                  self.calcIncome()
-             elif choice == 'expenses':
-                  self.calcExpenses()
-             elif choice == 'flow':
-                  self.calcCashFlow()
-             elif choice == 'roi':
-                  self.calcROI()
-             else:
-                  print('Invalid entry, please make another choice.')
+#              if choice == 'quit':
+#                   print('\nThanks for visiting our ROI Calculator! If you change your mind, we would love you help you calculate the ROI on your investments in the future.')
+#                   break
+#              elif choice == 'income':
+#                   self.calcIncome()
+#              elif choice == 'expenses':
+#                   self.calcExpenses()
+#              elif choice == 'flow':
+#                   self.calcCashFlow()
+#              elif choice == 'roi':
+#                   self.calcROI()
+#              else:
+#                   print('Invalid entry, please make another choice.')
                   
 
     def calcIncome(self):
@@ -132,6 +132,10 @@ class ROICalc():
          print(f'\nYour cash on can ROI is {roi}%.')
 
 ROI = ROICalc()
-ROI.runner()
+# ROI.runner()
+ROI.calcIncome()
+ROI.calcExpenses()
+ROI.calcCashFlow()
+ROI.calcROI()
 
 
