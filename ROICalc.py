@@ -82,6 +82,8 @@ class ROICalc():
                   
 
     def calcIncome(self):
+        print('Welcome to the Bigger Pockets ROI (Return on Investment) Calculator!')
+        print('\nPlease enter ALL values without extra characters such as $ or , .  ')
         rental = int(input('\nWhat is your monthly rental income? '))
         laundry = int(input('\nWhat is your monthly laundry income? '))
         storage = int(input('\nWhat is your monthly storage income? '))
